@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: none;
+}
+body{
+    background-color: rgb(236, 236, 236);
+    
+ 
+}
+header{
+    background-color: black;
+    height: 180px;
+    width: 100%;
+}
+#logo{
+    vertical-align: middle;
+    margin: 2px;
+    padding: 2px;
+    width: 150px;
+    background-color: black;
+    /* background-color: #35228b; */
+    animation: logo-animation 5s ease-out forwards;
+}
+@keyframes logo-animation {
+    0% {
+        transform: translateX(-50px);
+    }
+    80%{
+        transform: translateX(50px);
+    }
+    100%{
+        transform: translateX(100px);
+    }
+    120%{
+        transform: translateX(100px);
+    }
+}
+
+    #contact {
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: black;
+        margin-top: 50px;
+        background: linear-gradient(-45deg, #770101, #fe6969, #c82727, #b50000);
+        background-size: 800% 400%;
+        padding: 1em 2em;
+        display: inline-block;
+        border: none;
+        border-radius: 10px;
+        font-size: 17px;
+        font-weight: 700;
+        color: white;
+        transition: all .5s ease-in-out;
+        animation: gradient 10s infinite cubic-bezier(.62, .28, .23, .99) both;
+        float:right;
+        margin-right: 30px;
+       }
+       
+       #contact:hover {
+        animation: gradient 3s infinite;
+        transform: scale(1.05);
+       }
+       
+       #contact:active {
+        animation: gradient 3s infinite;
+        transform: scale(0.8);
+       }
+       
+       @keyframes gradient {
+        0% {
+         background-position: 0% 50%;
+        }
+       
+        50% {
+         background-position: 100% 50%;
+        }
+       
+        100% {
+         background-position: 0% 50%;
+        }
+       }
+    .container{
+        /* padding:500px; */
+        /* width: 500px; */
+        height: 400px;
+        font-size: 1.0em;
+        text-align: right 100px;
+        /* margin-right: -50px; */
+        overflow: hidden;
+        width: 100%;
+        color: white;
+        background-image: url("./Blog_Como-aumentar-a-margem-de-lucro-e-o-fluxo-de-carros-na-troca-de-óleo.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        -webkit-text-stroke-color:red 1px;
+    }
+    #container:active {
+        animation: const 3s infinite;
+        transform: scale(0.8);
+       }
+       
+       @keyframes const {
+        0% {
+         background-position: 0% 100%;
+        }
+       
+        50% {
+         background-position: 150% 100%;
+        }
+       
+        100% {
+         background-position: 0% 50%;
+        }
+       }
+       .apresentacao{
+           margin-left: 30px;
+           border-radius: 2px 2px 8px black;
+       }
+
+    #carrossel{
+        max-width: 100%;
+        width: 100%;
+        overflow: hidden;
+        height: 550px;
+        box-shadow: 10px 10px 15px rgba(255, 188, 188, 0.7);
+        animation: slide 15s infinite ease-out;
+    }
+    .container2{
+        background-color: black;
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        transform: translateX(0);
+    }
+    .marca{
+        background-color: whitesmoke;
+        margin-left: 200px;
+        font-size: small;
+        list-style-type: none;
+        padding: 20px;
+        text-decoration: none;
+        border-radius: 8px;
+    }
+    .marca:hover{
+        padding: 35px;
+        background-color: whitesmoke;
+        transition: 1s;
+        box-shadow: 2px 2px 4px black;
+        background-color: rgb(255, 227, 226);
+        
+    }
+    .marca:active {
+        animation: gradient 3s infinite;
+        transform: scale(0.8);
+    }
+    .cards{
+        list-style: none;
+        text-decoration: none;
+    }
+    .product-card{
+        list-style: none;
+        text-decoration: none;
+    }
+    .union-style{
+        background-image: url("./wlly.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 600px;
+        margin-bottom: 40px;
+        position: relative;
+    }
+
+    .style-car{
+        padding: 20px;
+        margin-top: 275px;
+        border-radius: 8px;
+        margin-left: 250px;
+        background-color: rgb(255, 227, 226);
+        width: 400px;
+        height: 200px;
+        max-width: 100%;
+        
+    }
+    .style-biker{
+        padding: 20px;
+        display: absolute;
+        border-radius: 8px;
+        margin-right: 250px;
+        margin-top: 275px;
+        width: 400px;
+        height: 200px;
+        float: right;
+        background-color: rgb(255, 227, 226);
+    }
+    input{
+        width: 100%;
+        padding: 5px;
+        margin-top: 5px;
+    }
+
+    .botao-calc{
+        margin-left: 50px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: black;
+        margin-top: 30px;
+        background: linear-gradient(-45deg, #770101, #fe6969, #c82727, #b50000);
+        background-size: 800% 400%;
+        padding: 1em 2em;
+        display: inline-block;
+        border: none;
+        border-radius: 10px;
+        font-size: 17px;
+        font-weight: 700;
+        color: white;
+        transition: all .5s ease-in-out;
+        animation: gradient 10s infinite cubic-bezier(.62, .28, .23, .99) both;
+        
+        
+    
+    }
+    .botao-calc:hover {
+        animation: gradient 3s infinite;
+        transform: scale(1.05);
+       }
+       
+    .botao-calc:active {
+        animation: gradient 3s infinite;
+        transform: scale(0.8);
+    }
+    
